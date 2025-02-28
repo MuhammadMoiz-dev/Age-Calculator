@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script src="app.js"></script>
+</body>
+</html>
+
+
+var user =prompt("enter your age")
+ var date =new Date().getTime()
+ var dob = new Date(user).getTime()
+ var minus=date-dob
+ var final = minus / (1000*60*60*24*365)
+ document.write(Math.floor(final))
